@@ -1,0 +1,16 @@
+PODS:
+  - DrunkenBishop (0.1.0)
+
+DEPENDENCIES:
+  - DrunkenBishop (from `../`)
+
+EXTERNAL SOURCES:
+  DrunkenBishop:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DrunkenBishop: 2af7f1d0aa93c9db9218233bf9381646d26d4428
+
+PODFILE CHECKSUM: ae081bb7a773d479b6a6d90b89af0fa604266ef3
+
+COCOAPODS: 1.9.3
