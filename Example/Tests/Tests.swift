@@ -1,5 +1,5 @@
 import XCTest
-import DrunkenBishop
+@testable import DrunkenBishop
 
 class Tests: XCTestCase {
     
@@ -14,8 +14,15 @@ class Tests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        let bishop = DrunkenBishop()
+        let text = "308204BC020100300DeF7aaaa787899"
+        print(bishop.representation(from: text))
+    }
+    
+    func testExample2() {
+        let bishop = DrunkenBishop()
+        let text = "308204BC020100300DeF7aaaa787899aaaaaaaaa"
+        print(bishop.representation(from: text))
     }
     
     func testPerformanceExample() {

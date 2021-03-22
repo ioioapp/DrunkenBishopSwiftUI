@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0F9FFC6426E35FACA3952F29B0381B0E /* Pods-DrunkenBishop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE88E33C1335023FECF118B91BFDAF3 /* Pods-DrunkenBishop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13422ABA2CE73C36442F5F775122C666 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E44BF9A76B490CFE8A4BAD7F0D485 /* ReplaceMe.swift */; };
 		1F6AF91525FFBAAF183979122FB9461A /* DrunkenBishop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D01F7298C9894BCE3E87DDCDD376CD /* DrunkenBishop-dummy.m */; };
 		646FD9912FCB9C0A25B2BBB7E9BA97A2 /* Pods-DrunkenBishop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE0BD1B5E9544866FFCE058B40403 /* Pods-DrunkenBishop_Tests-dummy.m */; };
 		8F9CD91C86F584CF8ECEBE06E40E57FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9C75F0D126089FCF00C80F3E /* DrunkenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75F0D026089FCF00C80F3E /* DrunkenView.swift */; };
+		9C75F0D52608A03B00C80F3E /* DrunkenBishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75F0D42608A03B00C80F3E /* DrunkenBishop.swift */; };
+		9C75F0D92608A06200C80F3E /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75F0D82608A06200C80F3E /* Previews.swift */; };
 		A5DB0E8A340FCB2E50A33482C2076BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BC6574FBA27BAD2535CA926A201076DA /* DrunkenBishop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 415E134BE880076EEB30F4E3A68D4B6F /* DrunkenBishop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -27,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A5E44BF9A76B490CFE8A4BAD7F0D485 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DrunkenBishop/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		0B9BD63C913E20DF13753B1F3FDE01C4 /* Pods-DrunkenBishop_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrunkenBishop_Tests-Info.plist"; sourceTree = "<group>"; };
 		139D23B12B54F44238B11F2DAAAE8398 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A8B759358C8FBE7908404ADCB95DC97 /* DrunkenBishop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DrunkenBishop-Info.plist"; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		5C5ADB399AE528D6C95777967F01DB4E /* Pods-DrunkenBishop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrunkenBishop_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		843B9E0FF0C1FAF7D18E145F7547143C /* Pods-DrunkenBishop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DrunkenBishop_Tests.modulemap"; sourceTree = "<group>"; };
+		9C75F0D026089FCF00C80F3E /* DrunkenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrunkenView.swift; path = Sources/DrunkenBishop/Classes/DrunkenView.swift; sourceTree = "<group>"; };
+		9C75F0D42608A03B00C80F3E /* DrunkenBishop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrunkenBishop.swift; path = Sources/DrunkenBishop/Classes/DrunkenBishop.swift; sourceTree = "<group>"; };
+		9C75F0D82608A06200C80F3E /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Previews.swift; path = Sources/DrunkenBishop/Classes/Previews.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A002C1664CD742F2612220B6A38F8E78 /* Pods-DrunkenBishop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrunkenBishop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB91DA7EC48BFBC49409B4A25E6E8865 /* DrunkenBishop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DrunkenBishop.modulemap; sourceTree = "<group>"; };
@@ -133,9 +137,11 @@
 		A631B0468C743306EBB63583A9D551FC /* DrunkenBishop */ = {
 			isa = PBXGroup;
 			children = (
-				0A5E44BF9A76B490CFE8A4BAD7F0D485 /* ReplaceMe.swift */,
 				EAE3A82212CD48C813BA08884DD47435 /* Pod */,
 				A1111AF7FCBB74AA21DB3A84F27B58C4 /* Support Files */,
+				9C75F0D026089FCF00C80F3E /* DrunkenView.swift */,
+				9C75F0D42608A03B00C80F3E /* DrunkenBishop.swift */,
+				9C75F0D82608A06200C80F3E /* Previews.swift */,
 			);
 			name = DrunkenBishop;
 			path = ../..;
@@ -245,6 +251,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					88C13098E47B1C34D8617F5FC8A99BA0 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -295,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C75F0D126089FCF00C80F3E /* DrunkenView.swift in Sources */,
+				9C75F0D52608A03B00C80F3E /* DrunkenBishop.swift in Sources */,
+				9C75F0D92608A06200C80F3E /* Previews.swift in Sources */,
 				1F6AF91525FFBAAF183979122FB9461A /* DrunkenBishop-dummy.m in Sources */,
-				13422ABA2CE73C36442F5F775122C666 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9A729E0C4B1489930991146041609B9 /* DrunkenBishop.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -360,7 +374,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DrunkenBishop/DrunkenBishop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DrunkenBishop/DrunkenBishop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DrunkenBishop/DrunkenBishop.modulemap";
 				PRODUCT_MODULE_NAME = DrunkenBishop;
@@ -425,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -505,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C98D19C82DAEB37ABB4A1745EBFB85BB /* DrunkenBishop.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -516,7 +531,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DrunkenBishop/DrunkenBishop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DrunkenBishop/DrunkenBishop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DrunkenBishop/DrunkenBishop.modulemap";
 				PRODUCT_MODULE_NAME = DrunkenBishop;
@@ -524,6 +539,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

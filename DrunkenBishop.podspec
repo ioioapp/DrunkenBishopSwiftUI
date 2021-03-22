@@ -23,7 +23,7 @@ implemented by OpenSSH for visualizing key fingerprints. This package implements
 
   s.ios.deployment_target = '13.0'
   s.swift_version = ['5.0', '5.1', '5.2', '5.3']
-  s.source_files = 'DrunkenBishop/Classes/**/*'
+  s.source_files = 'Sources/DrunkenBishop/Classes/**/*'
   
   # s.resource_bundles = {
   #   'DrunkenBishop' => ['DrunkenBishop/Assets/*.png']
