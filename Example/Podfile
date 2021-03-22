@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DrunkenBishop_Tests' do
+  pod 'DrunkenBishop', :path => '../'
+  
+  
+end
