@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommonCrypto
 
 public struct DrunkenBishop {
     let characters = " .o+=*BOX@%&#/^SE"
@@ -48,23 +49,22 @@ public struct DrunkenBishop {
         return renderField(from: matrix)
     }
     
+    public func representation(with key: String) -> String {
+        let hex = getHex(from: key)
+        print(">>> hex \(hex)")
+        return representation(from: hex)
+    }
+    
     private func getHex(from key: String) -> String {
-        let replaced = key
-            .replacingOccurrences(of: "-----BEGIN PUBLIC KEY-----", with: "")
-            .replacingOccurrences(of: "-----END PUBLIC KEY-----", with: "")
-        let encoded = Data(base64Encoded: replaced)!
-        let decoded = String(data: encoded, encoding: .utf8)!
-        let hash = decoded.sha1()
-        let hex = hash.toHex()
-        print("decoded \(decoded)")
-        print("hash \(hash)")
-        print("hex \(hex)")
-        return hex
+        return key
+            .replacingOccurrences(of: "-----BEGIN PUBLIC KEY-----\n", with: "")
+            .replacingOccurrences(of: "\n-----END PUBLIC KEY-----", with: "")
+            .base64()?.sha1().toHex() ?? ""
     }
     
     public func attributedRepresentation(from hex: String) -> [[String]] {
         return attributedChars(from: representation(from: hex))
-    }
+    } 
     
     public func attributedKeyRepresentation(from key: String) -> [[String]] {
         let hex = getHex(from: key)
@@ -91,7 +91,6 @@ public struct DrunkenBishop {
     
     private func renderField(from matrix: [[Int]]) -> String {
         let rows = matrix.reduce(into: "") { rows, row in
-            print(">>>>>>>>> row \(row) len \(row.count)")
             let col = row.reduce(into: "") { cols, cell in
                 cols.append(String(symbol(from: cell)))
             }
@@ -144,6 +143,17 @@ extension StringProtocol {
     }
 }
 
+extension Data {
+    func sha1() -> String {
+        var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
+        self.withUnsafeBytes {
+            _ = CC_SHA1($0.baseAddress, CC_LONG(self.count), &digest)
+        }
+        let hexBytes = digest.map { String(format: "%02hhx", $0) }
+        return hexBytes.joined()
+    }
+}
+
 extension String {
     var hexaToBinary: String {
         return hexaBytes.map {
@@ -159,4 +169,12 @@ extension String {
             return String(self[start..<end])
         }
     }
+    
+    func base64() -> Data? {
+        return Data(base64Encoded: self, options: .ignoreUnknownCharacters)
+    }
+    
+    func toHex(uppercase: Bool = true, prefix: String = "", separator: String = "") -> String {
+            return unicodeScalars.map { prefix + .init($0.value, radix: 16, uppercase: uppercase) } .joined(separator: separator)
+        }
 }

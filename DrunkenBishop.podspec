@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DrunkenBishop'
-  s.version          = '0.1.1'
+  s.version          = '0.2.1'
   s.summary          = 'Visual fingerprinting algorithm for visualizing key fingerprints implemented as a SwiftUI View'
   s.description      = <<-DESC
   The Drunken Bishop algorithm is a visual fingerprinting algorithm originally
@@ -22,7 +22,7 @@ implemented by OpenSSH for visualizing key fingerprints. This package implements
   s.social_media_url = 'https://twitter.com/ioiomexico'
 
   s.ios.deployment_target = '13.0'
-  s.swift_version = ['5.0', '5.1', '5.2', '5.3']
+  s.swift_version = ['5.0', '5.1', '5.2', '5.3', '5.4']
   s.source_files = 'Sources/DrunkenBishop/Classes/**/*'
   
   # s.resource_bundles = {

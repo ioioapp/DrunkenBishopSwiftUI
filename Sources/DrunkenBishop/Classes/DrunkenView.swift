@@ -7,7 +7,6 @@
 
 
 import SwiftUI
-import CommonCrypto
 
 @available(iOS 13.0, OSX 10.15, *)
 public struct DrunkenView: View {
@@ -22,7 +21,7 @@ public struct DrunkenView: View {
         self.key = nil
     }
     
-    init(key: String) {
+    init(privateKey: String) {
         self.bishop = DrunkenBishop()
         self.key = key
         self.hex = nil
@@ -72,21 +71,5 @@ extension Color {
             opacity: Double(a) / 255
         )
     }
-}
-
-extension String {
-    func sha1() -> String {
-        let data = Data(self.utf8)
-        var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
-        data.withUnsafeBytes {
-            _ = CC_SHA1($0.baseAddress, CC_LONG(data.count), &digest)
-        }
-        let hexBytes = digest.map { String(format: "%02hhx", $0) }
-        return hexBytes.joined()
-    }
-    
-    func toHex(uppercase: Bool = true, prefix: String = "", separator: String = "") -> String {
-            return unicodeScalars.map { prefix + .init($0.value, radix: 16, uppercase: uppercase) } .joined(separator: separator)
-        }
 }
 
