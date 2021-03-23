@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DrunkenBishop'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Visual fingerprinting algorithm for visualizing key fingerprints implemented as a SwiftUI View'
   s.description      = <<-DESC
   The Drunken Bishop algorithm is a visual fingerprinting algorithm originally
