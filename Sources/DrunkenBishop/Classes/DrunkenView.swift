@@ -23,7 +23,7 @@ public struct DrunkenView: View {
     
     init(privateKey: String) {
         self.bishop = DrunkenBishop()
-        self.key = key
+        self.key = privateKey
         self.hex = nil
     }
     
