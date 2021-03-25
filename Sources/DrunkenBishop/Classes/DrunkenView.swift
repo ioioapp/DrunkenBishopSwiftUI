@@ -15,13 +15,13 @@ public struct DrunkenView: View {
     private let hex: String?
     private let key: String?
     
-    init(hex: String) {
+    public init(hex: String) {
         self.bishop = DrunkenBishop()
         self.hex = hex
         self.key = nil
     }
     
-    init(privateKey: String) {
+    public init(privateKey: String) {
         self.bishop = DrunkenBishop()
         self.key = privateKey
         self.hex = nil
